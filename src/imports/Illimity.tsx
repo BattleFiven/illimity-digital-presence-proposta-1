@@ -70,7 +70,7 @@ function Frame1() {
   return (
     <div className="absolute h-full right-0 top-0 w-1/2">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <img alt="" className="absolute h-full left-[-48.95%] max-w-none top-0 w-[197.89%]" src={imgFrame1410077078} />
+        <img loading="eager" fetchPriority="high" decoding="sync" alt="" className="absolute h-full left-[-48.95%] max-w-none top-0 w-[197.89%]" src={imgFrame1410077078} />
       </div>
     </div>
   );
@@ -545,7 +545,7 @@ function Hero() {
   return (
     <div ref={wrapperRef} className="relative shrink-0 w-full z-[8]" style={{ height: `calc(200vh + ${STICKY_RELEASE}px)` }}>
       <div className="sticky top-0 h-screen overflow-clip">
-        <img alt="" className="absolute inset-0 w-full h-full object-cover max-w-none pointer-events-none" src={imgFrame1410077078} />
+        <img loading="lazy" decoding="async" alt="" className="absolute inset-0 w-full h-full object-cover max-w-none pointer-events-none" src={imgFrame1410077078} />
         <div ref={whitePanelRef} className="absolute left-0 top-0 bottom-0 bg-white z-[1] pointer-events-none" style={{ width: "50%" }} />
         <div ref={oldDarkTextRef} className="absolute inset-0 flex items-center justify-center z-[3] pointer-events-none" style={{ clipPath: "inset(0 50% 0 0)" }}>
           <p className="font-['Perfectly_Nineties:Regular',sans-serif] text-[176px] text-center text-[#201a39] tracking-[-3.52px] whitespace-nowrap leading-[0]">
@@ -836,6 +836,8 @@ function Hero1() {
       >
         <img
           ref={parallaxRef}
+          loading="lazy"
+          decoding="async"
           alt=""
           className="absolute block max-w-none size-full object-cover will-change-transform"
           height="578.846"
@@ -1196,6 +1198,8 @@ function Hero2() {
               {SERVICES_DATA.map((s, i) => (
                 <img
                   key={i}
+                  loading="lazy"
+                  decoding="async"
                   alt={s.title}
                   className="absolute block max-w-none size-full object-contain transition-opacity duration-700 ease-in-out"
                   style={{ opacity: activeIndex === i ? 1 : 0 }}
@@ -1517,6 +1521,8 @@ function Modulo() {
             {MODULO_DATA.map((item, i) => (
               <img
                 key={i}
+                loading="lazy"
+                decoding="async"
                 alt={item.title}
                 className="absolute block max-w-none size-full object-cover transition-opacity duration-700 ease-in-out"
                 style={{ opacity: activeIndex === i ? 1 : 0 }}
@@ -1536,7 +1542,7 @@ function Frame3() {
   return (
     <div className="absolute h-full left-0 top-0 w-[720px]">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <img alt="" className="absolute h-[-144.89%] left-[166.2%] max-w-none top-[135.13%] w-[-286.72%]" src={imgFrame1410077078} />
+        <img loading="lazy" decoding="async" alt="" className="absolute h-[-144.89%] left-[166.2%] max-w-none top-[135.13%] w-[-286.72%]" src={imgFrame1410077078} />
       </div>
     </div>
   );
@@ -1758,7 +1764,7 @@ function Hero3() {
         {/* Left abstract image */}
         <div className="absolute h-full top-0 right-[720px] left-[calc(-50vw+720px)]">
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <img alt="" className="absolute inset-0 w-full h-full object-cover object-right max-w-none" src={imgFrame1410077078} />
+            <img loading="lazy" decoding="async" alt="" className="absolute inset-0 w-full h-full object-cover object-right max-w-none" src={imgFrame1410077078} />
           </div>
         </div>
 
@@ -1800,7 +1806,7 @@ function Hero3() {
         <div className="absolute flex h-[344.184px] items-center justify-center left-[calc(50%+74px)] top-[338px] w-[260px]" style={{ opacity: img.opacity1, transform: `translateY(${img.y1}px)`, pointerEvents: img.opacity1 < 0.3 ? "none" as const : "auto" as const }}>
           <div className="-scale-y-100 flex-none rotate-180">
             <div className="h-[344.184px] relative w-[260px]" data-name="Union">
-              <img alt="" className="absolute block max-w-none size-full" height="344.184" src={imgVector69PerChiProgetta} width="260" />
+              <img loading="lazy" decoding="async" alt="" className="absolute block max-w-none size-full" height="344.184" src={imgVector69PerChiProgetta} width="260" />
             </div>
           </div>
         </div>
@@ -1835,7 +1841,7 @@ function Hero3() {
         <div className="absolute flex h-[344.184px] items-center justify-center left-[calc(50%+74px)] top-[338px] w-[260px]" style={{ opacity: img.opacity2, transform: `translateY(${img.y2}px)`, pointerEvents: img.opacity2 < 0.3 ? "none" as const : "auto" as const }}>
           <div className="-scale-y-100 flex-none rotate-180">
             <div className="h-[344.184px] relative w-[260px]" data-name="Union">
-              <img alt="" className="absolute block max-w-none size-full" height="344.184" src={imgVector69PerChiProtegge} width="260" />
+              <img loading="lazy" decoding="async" alt="" className="absolute block max-w-none size-full" height="344.184" src={imgVector69PerChiProtegge} width="260" />
             </div>
           </div>
         </div>
@@ -1897,7 +1903,7 @@ function Frame6() {
   return (
     <div className="absolute h-[950px] right-0 top-0 w-[720px]">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <img alt="" className="absolute h-[144.89%] left-[-120.52%] max-w-none top-[-9.76%] w-[286.72%]" src={imgFrame1410077079} />
+        <img loading="lazy" decoding="async" alt="" className="absolute h-[144.89%] left-[-120.52%] max-w-none top-[-9.76%] w-[286.72%]" src={imgFrame1410077079} />
       </div>
     </div>
   );
@@ -2030,7 +2036,7 @@ function Group4() {
   return (
     <div className="absolute contents left-[65px] top-[170px]">
       <div className="absolute h-[386.184px] left-[65px] top-[339px] w-[260px]" data-name="Union">
-        <img alt="" className="absolute block max-w-none size-full" height="386.184" src={imgUnion4} width="260" />
+        <img loading="lazy" decoding="async" alt="" className="absolute block max-w-none size-full" height="386.184" src={imgUnion4} width="260" />
       </div>
       <div className="absolute font-['PP_Neue_Montreal:Medium',sans-serif] leading-[1.09] left-[65px] not-italic text-[#201a39] text-[26px] top-[209px] w-[360px] whitespace-pre-wrap">
         <p className="mb-0">Conto Deposito</p>
@@ -2161,7 +2167,7 @@ function Frame18() {
   return (
     <div className="h-[270px] overflow-clip relative shrink-0 w-[437px]">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <img alt="" className="absolute h-[182.48%] left-[-34.55%] max-w-none top-[-3.96%] w-[169.09%]" src={imgFrame1410077078} />
+        <img loading="lazy" decoding="async" alt="" className="absolute h-[182.48%] left-[-34.55%] max-w-none top-[-3.96%] w-[169.09%]" src={imgFrame1410077078} />
       </div>
       <SvgGroupScegli />
     </div>
@@ -2204,7 +2210,7 @@ function Frame21() {
   return (
     <div className="h-[270px] overflow-clip relative w-[437px]">
       <div className="absolute inset-0 overflow-hidden pointer-events-none -scale-x-100 -scale-y-100">
-        <img alt="" className="absolute h-[169.51%] left-[-1.51%] max-w-none top-[-1.19%] w-[157.08%]" src={imgFrame1410077078} />
+        <img loading="lazy" decoding="async" alt="" className="absolute h-[169.51%] left-[-1.51%] max-w-none top-[-1.19%] w-[157.08%]" src={imgFrame1410077078} />
       </div>
       <div className="-translate-x-1/2 absolute flex items-center justify-center left-[calc(50%+0.51px)] size-[269.983px] top-0">
         <div className="-rotate-90 -scale-y-100 flex-none">
@@ -2265,7 +2271,7 @@ function Frame36() {
   return (
     <div className="h-[270px] overflow-clip relative shrink-0 w-[437px]">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <img alt="" className="absolute h-[169.51%] left-[-1.51%] max-w-none top-[-1.19%] w-[157.08%]" src={imgFrame1410077078} />
+        <img loading="lazy" decoding="async" alt="" className="absolute h-[169.51%] left-[-1.51%] max-w-none top-[-1.19%] w-[157.08%]" src={imgFrame1410077078} />
       </div>
       <SvgGroupGestisci />
     </div>
@@ -2387,7 +2393,7 @@ function Hero7() {
   return (
     <div className="-translate-x-1/2 absolute bottom-0 h-[470px] left-[calc(50%-0.5px)] w-[523px]" data-name="duotone_aggiornato11 1">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <img alt="" className="absolute h-[121.49%] left-[-6.69%] max-w-none top-[-21.49%] w-[113.39%]" style={{ transform: 'scaleX(-1)' }} src={imgDuotoneAggiornato111} />
+        <img loading="lazy" decoding="async" alt="" className="absolute h-[121.49%] left-[-6.69%] max-w-none top-[-21.49%] w-[113.39%]" style={{ transform: 'scaleX(-1)' }} src={imgDuotoneAggiornato111} />
       </div>
     </div>
   );
@@ -2396,7 +2402,7 @@ function Hero7() {
 function Hero6() {
   return (
     <div className="h-[600px] overflow-clip relative shrink-0 w-screen z-[2] flex justify-center" data-name="Hero">
-      <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgHero} />
+      <img loading="lazy" decoding="async" alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgHero} />
       <div className="relative w-[1440px] h-full shrink-0">
         <div className="-translate-x-1/2 absolute bottom-[0.02px] flex items-center justify-center left-[calc(50%+0.01px)] size-[1617.983px]">
           <div className="-scale-y-100 flex-none rotate-180">
@@ -2432,7 +2438,7 @@ function Hero6() {
 
 function Frame40() {
   return (
-    <img alt="" className="block w-full h-auto" src={imgFooterGlow} />
+    <img loading="lazy" decoding="async" alt="" className="block w-full h-auto" src={imgFooterGlow} />
   );
 }
 
